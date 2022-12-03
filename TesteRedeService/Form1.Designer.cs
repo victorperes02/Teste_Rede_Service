@@ -49,8 +49,16 @@ namespace TesteRedeService
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Question6 = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtRua = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textcep = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Question7 = new System.Windows.Forms.TabPage();
@@ -64,14 +72,6 @@ namespace TesteRedeService
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtRua = new System.Windows.Forms.TextBox();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.txtBairro = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.Question1.SuspendLayout();
             this.Question3_4_5.SuspendLayout();
@@ -270,7 +270,7 @@ namespace TesteRedeService
             this.Question6.Controls.Add(this.txtRua);
             this.Question6.Controls.Add(this.txtEstado);
             this.Question6.Controls.Add(this.button6);
-            this.Question6.Controls.Add(this.textBox2);
+            this.Question6.Controls.Add(this.textcep);
             this.Question6.Controls.Add(this.label7);
             this.Question6.Controls.Add(this.label6);
             this.Question6.Location = new System.Drawing.Point(4, 24);
@@ -282,6 +282,70 @@ namespace TesteRedeService
             this.Question6.UseVisualStyleBackColor = true;
             this.Question6.Click += new System.EventHandler(this.Question6_Click);
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(24, 315);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(41, 15);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "Bairro:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(24, 372);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(30, 15);
+            this.label16.TabIndex = 10;
+            this.label16.Text = "Rua:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(24, 252);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(47, 15);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Cidade:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(24, 185);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(45, 15);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Estado:";
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Location = new System.Drawing.Point(24, 333);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(350, 23);
+            this.txtBairro.TabIndex = 7;
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(24, 271);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(350, 23);
+            this.txtCidade.TabIndex = 6;
+            // 
+            // txtRua
+            // 
+            this.txtRua.Location = new System.Drawing.Point(24, 390);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(350, 23);
+            this.txtRua.TabIndex = 5;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(24, 203);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(350, 23);
+            this.txtEstado.TabIndex = 4;
+            // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(217, 130);
@@ -292,13 +356,13 @@ namespace TesteRedeService
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // textBox2
+            // textcep
             // 
-            this.textBox2.Location = new System.Drawing.Point(95, 130);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textcep.Location = new System.Drawing.Point(95, 130);
+            this.textcep.Name = "textcep";
+            this.textcep.Size = new System.Drawing.Size(100, 23);
+            this.textcep.TabIndex = 2;
+            this.textcep.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label7
             // 
@@ -430,70 +494,6 @@ namespace TesteRedeService
             this.label3.Text = "pasta do sistema, e criar alguma função para ler essa imagem e mostrar em tela no" +
     " formato base64.";
             // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(24, 203);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(350, 23);
-            this.txtEstado.TabIndex = 4;
-            // 
-            // txtRua
-            // 
-            this.txtRua.Location = new System.Drawing.Point(24, 390);
-            this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(350, 23);
-            this.txtRua.TabIndex = 5;
-            // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(24, 271);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(350, 23);
-            this.txtCidade.TabIndex = 6;
-            // 
-            // txtBairro
-            // 
-            this.txtBairro.Location = new System.Drawing.Point(24, 333);
-            this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(350, 23);
-            this.txtBairro.TabIndex = 7;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(24, 185);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 15);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Estado:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(24, 252);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(47, 15);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "Cidade:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(24, 372);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(30, 15);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "Rua:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(24, 315);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(41, 15);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Bairro:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -535,7 +535,7 @@ namespace TesteRedeService
         public  System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textcep;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView2;

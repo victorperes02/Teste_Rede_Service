@@ -272,238 +272,443 @@ namespace WSCorreios
     public interface AtendeCliente
     {
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.SQLException), Action="", Name="SQLException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaServicosAdicionaisAtivosResponse buscaServicosAdicionaisAtivos(WSCorreios.buscaServicosAdicionaisAtivos request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.buscaServicosAdicionaisAtivosResponse> buscaServicosAdicionaisAtivosAsync(WSCorreios.buscaServicosAdicionaisAtivos request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.fechaPlpResponse fechaPlp(WSCorreios.fechaPlp request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.fechaPlpResponse> fechaPlpAsync(WSCorreios.fechaPlp request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.Exception), Action="", Name="Exception")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.calculaTarifaServicoResponse calculaTarifaServico(WSCorreios.calculaTarifaServico request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.calculaTarifaServicoResponse> calculaTarifaServicoAsync(WSCorreios.calculaTarifaServico request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.validaPlpResponse validaPlp(WSCorreios.validaPlp request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.validaPlpResponse> validaPlpAsync(WSCorreios.validaPlp request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.VerificaSeTodosObjetosCanceladosResponse VerificaSeTodosObjetosCancelados(WSCorreios.VerificaSeTodosObjetosCancelados request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.VerificaSeTodosObjetosCanceladosResponse> VerificaSeTodosObjetosCanceladosAsync(WSCorreios.VerificaSeTodosObjetosCancelados request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.Exception), Action="", Name="Exception")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.cancelarObjetoResponse cancelarObjeto(WSCorreios.cancelarObjeto request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.cancelarObjetoResponse> cancelarObjetoAsync(WSCorreios.cancelarObjeto request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.pesquisarParametrosPorDescricaoResponse pesquisarParametrosPorDescricao(WSCorreios.pesquisarParametrosPorDescricao request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.pesquisarParametrosPorDescricaoResponse> pesquisarParametrosPorDescricaoAsync(WSCorreios.pesquisarParametrosPorDescricao request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.SQLException), Action="", Name="SQLException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.atualizaPagamentoNaEntregaResponse atualizaPagamentoNaEntrega(WSCorreios.atualizaPagamentoNaEntrega request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.atualizaPagamentoNaEntregaResponse> atualizaPagamentoNaEntregaAsync(WSCorreios.atualizaPagamentoNaEntrega request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.obterClienteAtualizacaoResponse obterClienteAtualizacao(WSCorreios.obterClienteAtualizacao request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.obterClienteAtualizacaoResponse> obterClienteAtualizacaoAsync(WSCorreios.obterClienteAtualizacao request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.verificaDisponibilidadeServicoResponse verificaDisponibilidadeServico(WSCorreios.verificaDisponibilidadeServico request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.verificaDisponibilidadeServicoResponse> verificaDisponibilidadeServicoAsync(WSCorreios.verificaDisponibilidadeServico request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.fechaPlpVariosServicosResponse fechaPlpVariosServicos(WSCorreios.fechaPlpVariosServicos request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.fechaPlpVariosServicosResponse> fechaPlpVariosServicosAsync(WSCorreios.fechaPlpVariosServicos request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.geraDigitoVerificadorEtiquetasResponse geraDigitoVerificadorEtiquetas(WSCorreios.geraDigitoVerificadorEtiquetas request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.geraDigitoVerificadorEtiquetasResponse> geraDigitoVerificadorEtiquetasAsync(WSCorreios.geraDigitoVerificadorEtiquetas request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.obterEmbalagemLRSResponse obterEmbalagemLRS(WSCorreios.obterEmbalagemLRS request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.obterEmbalagemLRSResponse> obterEmbalagemLRSAsync(WSCorreios.obterEmbalagemLRS request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.validaEtiquetaPLPResponse validaEtiquetaPLP(WSCorreios.validaEtiquetaPLP request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.validaEtiquetaPLPResponse> validaEtiquetaPLPAsync(WSCorreios.validaEtiquetaPLP request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.SQLException), Action="", Name="SQLException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaServicosValorDeclaradoResponse buscaServicosValorDeclarado(WSCorreios.buscaServicosValorDeclarado request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.buscaServicosValorDeclaradoResponse> buscaServicosValorDeclaradoAsync(WSCorreios.buscaServicosValorDeclarado request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.SQLException), Action="", Name="SQLException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.consultaCEPResponse consultaCEP(WSCorreios.consultaCEP request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.consultaCEPResponse> consultaCEPAsync(WSCorreios.consultaCEP request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.integrarUsuarioScolResponse integrarUsuarioScol(WSCorreios.integrarUsuarioScol request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.integrarUsuarioScolResponse> integrarUsuarioScolAsync(WSCorreios.integrarUsuarioScol request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.pesquisarDimensoesServicoResponse pesquisarDimensoesServico(WSCorreios.pesquisarDimensoesServico request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.pesquisarDimensoesServicoResponse> pesquisarDimensoesServicoAsync(WSCorreios.pesquisarDimensoesServico request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.pesquisarEmbalagensPorServicoResponse pesquisarEmbalagensPorServico(WSCorreios.pesquisarEmbalagensPorServico request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.pesquisarEmbalagensPorServicoResponse> pesquisarEmbalagensPorServicoAsync(WSCorreios.pesquisarEmbalagensPorServico request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.SQLException), Action="", Name="SQLException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.atualizaRemessaAgrupadaResponse atualizaRemessaAgrupada(WSCorreios.atualizaRemessaAgrupada request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.atualizaRemessaAgrupadaResponse> atualizaRemessaAgrupadaAsync(WSCorreios.atualizaRemessaAgrupada request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.solicitaPLPResponse solicitaPLP(WSCorreios.solicitaPLP request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.solicitaPLPResponse> solicitaPLPAsync(WSCorreios.solicitaPLP request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.getStatusCartaoPostagemResponse getStatusCartaoPostagem(WSCorreios.getStatusCartaoPostagem request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.getStatusCartaoPostagemResponse> getStatusCartaoPostagemAsync(WSCorreios.getStatusCartaoPostagem request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<WSCorreios.verificaModalTransporteResponse> verificaModalTransporteAsync(WSCorreios.verificaModalTransporte request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.verificaModalTransporteResponse verificaModalTransporte(WSCorreios.verificaModalTransporte request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<WSCorreios.verificaModalTransporteResponse> verificaModalTransporteAsync(WSCorreios.verificaModalTransporte request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaDataAtualResponse buscaDataAtual(WSCorreios.buscaDataAtual request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.buscaDataAtualResponse> buscaDataAtualAsync(WSCorreios.buscaDataAtual request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.Exception), Action="", Name="Exception")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaTarifaValeResponse buscaTarifaVale(WSCorreios.buscaTarifaVale request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.buscaTarifaValeResponse> buscaTarifaValeAsync(WSCorreios.buscaTarifaVale request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.validarPostagemSimultaneaResponse validarPostagemSimultanea(WSCorreios.validarPostagemSimultanea request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.validarPostagemSimultaneaResponse> validarPostagemSimultaneaAsync(WSCorreios.validarPostagemSimultanea request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<WSCorreios.getStatusPLPResponse> getStatusPLPAsync(WSCorreios.getStatusPLP request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.getStatusPLPResponse getStatusPLP(WSCorreios.getStatusPLP request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<WSCorreios.getStatusPLPResponse> getStatusPLPAsync(WSCorreios.getStatusPLP request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.pesquisarServicosAdicionaisResponse pesquisarServicosAdicionais(WSCorreios.pesquisarServicosAdicionais request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.pesquisarServicosAdicionaisResponse> pesquisarServicosAdicionaisAsync(WSCorreios.pesquisarServicosAdicionais request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.SQLException), Action="", Name="SQLException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaServicosXServicosAdicionaisResponse buscaServicosXServicosAdicionais(WSCorreios.buscaServicosXServicosAdicionais request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.buscaServicosXServicosAdicionaisResponse> buscaServicosXServicosAdicionaisAsync(WSCorreios.buscaServicosXServicosAdicionais request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.cancelarPedidoScolResponse cancelarPedidoScol(WSCorreios.cancelarPedidoScol request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.cancelarPedidoScolResponse> cancelarPedidoScolAsync(WSCorreios.cancelarPedidoScol request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.bloquearObjetoResponse bloquearObjeto(WSCorreios.bloquearObjeto request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.bloquearObjetoResponse> bloquearObjetoAsync(WSCorreios.bloquearObjeto request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaContratoResponse buscaContrato(WSCorreios.buscaContrato request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.buscaContratoResponse> buscaContratoAsync(WSCorreios.buscaContrato request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.solicitaEtiquetasResponse solicitaEtiquetas(WSCorreios.solicitaEtiquetas request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.solicitaEtiquetasResponse> solicitaEtiquetasAsync(WSCorreios.solicitaEtiquetas request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.solicitaXmlPlpResponse solicitaXmlPlp(WSCorreios.solicitaXmlPlp request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.solicitaXmlPlpResponse> solicitaXmlPlpAsync(WSCorreios.solicitaXmlPlp request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.validarPostagemReversaResponse validarPostagemReversa(WSCorreios.validarPostagemReversa request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.validarPostagemReversaResponse> validarPostagemReversaAsync(WSCorreios.validarPostagemReversa request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaClienteResponse buscaCliente(WSCorreios.buscaCliente request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.buscaClienteResponse> buscaClienteAsync(WSCorreios.buscaCliente request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(WSCorreios.ErroMontagemRelatorio), Action="", Name="ErroMontagemRelatorio")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaPagamentoEntregaResponse buscaPagamentoEntrega(WSCorreios.buscaPagamentoEntrega request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.buscaPagamentoEntregaResponse> buscaPagamentoEntregaAsync(WSCorreios.buscaPagamentoEntrega request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.solicitarPostagemScolResponse solicitarPostagemScol(WSCorreios.solicitarPostagemScol request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.solicitarPostagemScolResponse> solicitarPostagemScolAsync(WSCorreios.solicitarPostagemScol request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<WSCorreios.buscaServicosResponse> buscaServicosAsync(WSCorreios.buscaServicos request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaServicosResponse buscaServicos(WSCorreios.buscaServicos request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<WSCorreios.buscaServicosResponse> buscaServicosAsync(WSCorreios.buscaServicos request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.obterMensagemParametrizadaResponse obterMensagemParametrizada(WSCorreios.obterMensagemParametrizada request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.obterMensagemParametrizadaResponse> obterMensagemParametrizadaAsync(WSCorreios.obterMensagemParametrizada request);
         
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WSCorreios.buscaOpcoesResponse buscaOpcoes(WSCorreios.buscaOpcoes request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WSCorreios.buscaOpcoesResponse> buscaOpcoesAsync(WSCorreios.buscaOpcoes request);
     }
     
@@ -8721,6 +8926,21 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaServicosAdicionaisAtivosResponse WSCorreios.AtendeCliente.buscaServicosAdicionaisAtivos(WSCorreios.buscaServicosAdicionaisAtivos request)
+        {
+            return base.Channel.buscaServicosAdicionaisAtivos(request);
+        }
+        
+        public WSCorreios.servicoAdicionalXML[] buscaServicosAdicionaisAtivos(string usuario, string senha)
+        {
+            WSCorreios.buscaServicosAdicionaisAtivos inValue = new WSCorreios.buscaServicosAdicionaisAtivos();
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.buscaServicosAdicionaisAtivosResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaServicosAdicionaisAtivos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.buscaServicosAdicionaisAtivosResponse> WSCorreios.AtendeCliente.buscaServicosAdicionaisAtivosAsync(WSCorreios.buscaServicosAdicionaisAtivos request)
         {
             return base.Channel.buscaServicosAdicionaisAtivosAsync(request);
@@ -8732,6 +8952,25 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).buscaServicosAdicionaisAtivosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.fechaPlpResponse WSCorreios.AtendeCliente.fechaPlp(WSCorreios.fechaPlp request)
+        {
+            return base.Channel.fechaPlp(request);
+        }
+        
+        public long fechaPlp(string xml, long idPlpCliente, string cartaoPostagem, string faixaEtiquetas, string usuario, string senha)
+        {
+            WSCorreios.fechaPlp inValue = new WSCorreios.fechaPlp();
+            inValue.xml = xml;
+            inValue.idPlpCliente = idPlpCliente;
+            inValue.cartaoPostagem = cartaoPostagem;
+            inValue.faixaEtiquetas = faixaEtiquetas;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.fechaPlpResponse retVal = ((WSCorreios.AtendeCliente)(this)).fechaPlp(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8750,6 +8989,34 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).fechaPlpAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.calculaTarifaServicoResponse WSCorreios.AtendeCliente.calculaTarifaServico(WSCorreios.calculaTarifaServico request)
+        {
+            return base.Channel.calculaTarifaServico(request);
+        }
+        
+        public string calculaTarifaServico(string codAdministrativo, string usuario, string senha, string codServico, string cepOrigem, string cepDestino, string peso, int codFormato, double comprimento, double altura, double largura, double diametro, string codMaoPropria, double valorDeclarado, string codAvisoRecebimento)
+        {
+            WSCorreios.calculaTarifaServico inValue = new WSCorreios.calculaTarifaServico();
+            inValue.codAdministrativo = codAdministrativo;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            inValue.codServico = codServico;
+            inValue.cepOrigem = cepOrigem;
+            inValue.cepDestino = cepDestino;
+            inValue.peso = peso;
+            inValue.codFormato = codFormato;
+            inValue.comprimento = comprimento;
+            inValue.altura = altura;
+            inValue.largura = largura;
+            inValue.diametro = diametro;
+            inValue.codMaoPropria = codMaoPropria;
+            inValue.valorDeclarado = valorDeclarado;
+            inValue.codAvisoRecebimento = codAvisoRecebimento;
+            WSCorreios.calculaTarifaServicoResponse retVal = ((WSCorreios.AtendeCliente)(this)).calculaTarifaServico(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8780,6 +9047,28 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.validaPlpResponse WSCorreios.AtendeCliente.validaPlp(WSCorreios.validaPlp request)
+        {
+            return base.Channel.validaPlp(request);
+        }
+        
+        public bool validaPlp(long cliente, string numero, long diretoria, string cartao, string unidadePostagem, long servico, string[] servicosAdicionais, string usuario, string senha)
+        {
+            WSCorreios.validaPlp inValue = new WSCorreios.validaPlp();
+            inValue.cliente = cliente;
+            inValue.numero = numero;
+            inValue.diretoria = diretoria;
+            inValue.cartao = cartao;
+            inValue.unidadePostagem = unidadePostagem;
+            inValue.servico = servico;
+            inValue.servicosAdicionais = servicosAdicionais;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.validaPlpResponse retVal = ((WSCorreios.AtendeCliente)(this)).validaPlp(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.validaPlpResponse> WSCorreios.AtendeCliente.validaPlpAsync(WSCorreios.validaPlp request)
         {
             return base.Channel.validaPlpAsync(request);
@@ -8801,6 +9090,20 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.VerificaSeTodosObjetosCanceladosResponse WSCorreios.AtendeCliente.VerificaSeTodosObjetosCancelados(WSCorreios.VerificaSeTodosObjetosCancelados request)
+        {
+            return base.Channel.VerificaSeTodosObjetosCancelados(request);
+        }
+        
+        public bool VerificaSeTodosObjetosCancelados(WSCorreios.objetoPostal[] arg0)
+        {
+            WSCorreios.VerificaSeTodosObjetosCancelados inValue = new WSCorreios.VerificaSeTodosObjetosCancelados();
+            inValue.arg0 = arg0;
+            WSCorreios.VerificaSeTodosObjetosCanceladosResponse retVal = ((WSCorreios.AtendeCliente)(this)).VerificaSeTodosObjetosCancelados(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.VerificaSeTodosObjetosCanceladosResponse> WSCorreios.AtendeCliente.VerificaSeTodosObjetosCanceladosAsync(WSCorreios.VerificaSeTodosObjetosCancelados request)
         {
             return base.Channel.VerificaSeTodosObjetosCanceladosAsync(request);
@@ -8811,6 +9114,23 @@ namespace WSCorreios
             WSCorreios.VerificaSeTodosObjetosCancelados inValue = new WSCorreios.VerificaSeTodosObjetosCancelados();
             inValue.arg0 = arg0;
             return ((WSCorreios.AtendeCliente)(this)).VerificaSeTodosObjetosCanceladosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.cancelarObjetoResponse WSCorreios.AtendeCliente.cancelarObjeto(WSCorreios.cancelarObjeto request)
+        {
+            return base.Channel.cancelarObjeto(request);
+        }
+        
+        public bool cancelarObjeto(long idPlp, string numeroEtiqueta, string usuario, string senha)
+        {
+            WSCorreios.cancelarObjeto inValue = new WSCorreios.cancelarObjeto();
+            inValue.idPlp = idPlp;
+            inValue.numeroEtiqueta = numeroEtiqueta;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.cancelarObjetoResponse retVal = ((WSCorreios.AtendeCliente)(this)).cancelarObjeto(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8830,6 +9150,20 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.pesquisarParametrosPorDescricaoResponse WSCorreios.AtendeCliente.pesquisarParametrosPorDescricao(WSCorreios.pesquisarParametrosPorDescricao request)
+        {
+            return base.Channel.pesquisarParametrosPorDescricao(request);
+        }
+        
+        public WSCorreios.dimensaoTO pesquisarParametrosPorDescricao(string prefix)
+        {
+            WSCorreios.pesquisarParametrosPorDescricao inValue = new WSCorreios.pesquisarParametrosPorDescricao();
+            inValue.prefix = prefix;
+            WSCorreios.pesquisarParametrosPorDescricaoResponse retVal = ((WSCorreios.AtendeCliente)(this)).pesquisarParametrosPorDescricao(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.pesquisarParametrosPorDescricaoResponse> WSCorreios.AtendeCliente.pesquisarParametrosPorDescricaoAsync(WSCorreios.pesquisarParametrosPorDescricao request)
         {
             return base.Channel.pesquisarParametrosPorDescricaoAsync(request);
@@ -8840,6 +9174,21 @@ namespace WSCorreios
             WSCorreios.pesquisarParametrosPorDescricao inValue = new WSCorreios.pesquisarParametrosPorDescricao();
             inValue.prefix = prefix;
             return ((WSCorreios.AtendeCliente)(this)).pesquisarParametrosPorDescricaoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.atualizaPagamentoNaEntregaResponse WSCorreios.AtendeCliente.atualizaPagamentoNaEntrega(WSCorreios.atualizaPagamentoNaEntrega request)
+        {
+            return base.Channel.atualizaPagamentoNaEntrega(request);
+        }
+        
+        public string atualizaPagamentoNaEntrega(string usuario, string senha)
+        {
+            WSCorreios.atualizaPagamentoNaEntrega inValue = new WSCorreios.atualizaPagamentoNaEntrega();
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.atualizaPagamentoNaEntregaResponse retVal = ((WSCorreios.AtendeCliente)(this)).atualizaPagamentoNaEntrega(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8857,6 +9206,22 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.obterClienteAtualizacaoResponse WSCorreios.AtendeCliente.obterClienteAtualizacao(WSCorreios.obterClienteAtualizacao request)
+        {
+            return base.Channel.obterClienteAtualizacao(request);
+        }
+        
+        public System.DateTime obterClienteAtualizacao(string cnpjCliente, string usuario, string senha)
+        {
+            WSCorreios.obterClienteAtualizacao inValue = new WSCorreios.obterClienteAtualizacao();
+            inValue.cnpjCliente = cnpjCliente;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.obterClienteAtualizacaoResponse retVal = ((WSCorreios.AtendeCliente)(this)).obterClienteAtualizacao(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.obterClienteAtualizacaoResponse> WSCorreios.AtendeCliente.obterClienteAtualizacaoAsync(WSCorreios.obterClienteAtualizacao request)
         {
             return base.Channel.obterClienteAtualizacaoAsync(request);
@@ -8869,6 +9234,25 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).obterClienteAtualizacaoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.verificaDisponibilidadeServicoResponse WSCorreios.AtendeCliente.verificaDisponibilidadeServico(WSCorreios.verificaDisponibilidadeServico request)
+        {
+            return base.Channel.verificaDisponibilidadeServico(request);
+        }
+        
+        public string verificaDisponibilidadeServico(int codAdministrativo, string numeroServico, string cepOrigem, string cepDestino, string usuario, string senha)
+        {
+            WSCorreios.verificaDisponibilidadeServico inValue = new WSCorreios.verificaDisponibilidadeServico();
+            inValue.codAdministrativo = codAdministrativo;
+            inValue.numeroServico = numeroServico;
+            inValue.cepOrigem = cepOrigem;
+            inValue.cepDestino = cepDestino;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.verificaDisponibilidadeServicoResponse retVal = ((WSCorreios.AtendeCliente)(this)).verificaDisponibilidadeServico(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8890,6 +9274,25 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.fechaPlpVariosServicosResponse WSCorreios.AtendeCliente.fechaPlpVariosServicos(WSCorreios.fechaPlpVariosServicos request)
+        {
+            return base.Channel.fechaPlpVariosServicos(request);
+        }
+        
+        public long fechaPlpVariosServicos(string xml, long idPlpCliente, string cartaoPostagem, string[] listaEtiquetas, string usuario, string senha)
+        {
+            WSCorreios.fechaPlpVariosServicos inValue = new WSCorreios.fechaPlpVariosServicos();
+            inValue.xml = xml;
+            inValue.idPlpCliente = idPlpCliente;
+            inValue.cartaoPostagem = cartaoPostagem;
+            inValue.listaEtiquetas = listaEtiquetas;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.fechaPlpVariosServicosResponse retVal = ((WSCorreios.AtendeCliente)(this)).fechaPlpVariosServicos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.fechaPlpVariosServicosResponse> WSCorreios.AtendeCliente.fechaPlpVariosServicosAsync(WSCorreios.fechaPlpVariosServicos request)
         {
             return base.Channel.fechaPlpVariosServicosAsync(request);
@@ -8908,6 +9311,22 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.geraDigitoVerificadorEtiquetasResponse WSCorreios.AtendeCliente.geraDigitoVerificadorEtiquetas(WSCorreios.geraDigitoVerificadorEtiquetas request)
+        {
+            return base.Channel.geraDigitoVerificadorEtiquetas(request);
+        }
+        
+        public int[] geraDigitoVerificadorEtiquetas(string[] etiquetas, string usuario, string senha)
+        {
+            WSCorreios.geraDigitoVerificadorEtiquetas inValue = new WSCorreios.geraDigitoVerificadorEtiquetas();
+            inValue.etiquetas = etiquetas;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.geraDigitoVerificadorEtiquetasResponse retVal = ((WSCorreios.AtendeCliente)(this)).geraDigitoVerificadorEtiquetas(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.geraDigitoVerificadorEtiquetasResponse> WSCorreios.AtendeCliente.geraDigitoVerificadorEtiquetasAsync(WSCorreios.geraDigitoVerificadorEtiquetas request)
         {
             return base.Channel.geraDigitoVerificadorEtiquetasAsync(request);
@@ -8923,6 +9342,19 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.obterEmbalagemLRSResponse WSCorreios.AtendeCliente.obterEmbalagemLRS(WSCorreios.obterEmbalagemLRS request)
+        {
+            return base.Channel.obterEmbalagemLRS(request);
+        }
+        
+        public WSCorreios.embalagemLRSMaster[] obterEmbalagemLRS()
+        {
+            WSCorreios.obterEmbalagemLRS inValue = new WSCorreios.obterEmbalagemLRS();
+            WSCorreios.obterEmbalagemLRSResponse retVal = ((WSCorreios.AtendeCliente)(this)).obterEmbalagemLRS(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.obterEmbalagemLRSResponse> WSCorreios.AtendeCliente.obterEmbalagemLRSAsync(WSCorreios.obterEmbalagemLRS request)
         {
             return base.Channel.obterEmbalagemLRSAsync(request);
@@ -8932,6 +9364,23 @@ namespace WSCorreios
         {
             WSCorreios.obterEmbalagemLRS inValue = new WSCorreios.obterEmbalagemLRS();
             return ((WSCorreios.AtendeCliente)(this)).obterEmbalagemLRSAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.validaEtiquetaPLPResponse WSCorreios.AtendeCliente.validaEtiquetaPLP(WSCorreios.validaEtiquetaPLP request)
+        {
+            return base.Channel.validaEtiquetaPLP(request);
+        }
+        
+        public bool validaEtiquetaPLP(string numeroEtiqueta, long idPlp, string usuario, string senha)
+        {
+            WSCorreios.validaEtiquetaPLP inValue = new WSCorreios.validaEtiquetaPLP();
+            inValue.numeroEtiqueta = numeroEtiqueta;
+            inValue.idPlp = idPlp;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.validaEtiquetaPLPResponse retVal = ((WSCorreios.AtendeCliente)(this)).validaEtiquetaPLP(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8951,6 +9400,21 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaServicosValorDeclaradoResponse WSCorreios.AtendeCliente.buscaServicosValorDeclarado(WSCorreios.buscaServicosValorDeclarado request)
+        {
+            return base.Channel.buscaServicosValorDeclarado(request);
+        }
+        
+        public string[] buscaServicosValorDeclarado(string usuario, string senha)
+        {
+            WSCorreios.buscaServicosValorDeclarado inValue = new WSCorreios.buscaServicosValorDeclarado();
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.buscaServicosValorDeclaradoResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaServicosValorDeclarado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.buscaServicosValorDeclaradoResponse> WSCorreios.AtendeCliente.buscaServicosValorDeclaradoAsync(WSCorreios.buscaServicosValorDeclarado request)
         {
             return base.Channel.buscaServicosValorDeclaradoAsync(request);
@@ -8965,6 +9429,20 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.consultaCEPResponse WSCorreios.AtendeCliente.consultaCEP(WSCorreios.consultaCEP request)
+        {
+            return base.Channel.consultaCEP(request);
+        }
+        
+        public WSCorreios.enderecoERP consultaCEP(string cep)
+        {
+            WSCorreios.consultaCEP inValue = new WSCorreios.consultaCEP();
+            inValue.cep = cep;
+            WSCorreios.consultaCEPResponse retVal = ((WSCorreios.AtendeCliente)(this)).consultaCEP(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.consultaCEPResponse> WSCorreios.AtendeCliente.consultaCEPAsync(WSCorreios.consultaCEP request)
         {
             return base.Channel.consultaCEPAsync(request);
@@ -8975,6 +9453,22 @@ namespace WSCorreios
             WSCorreios.consultaCEP inValue = new WSCorreios.consultaCEP();
             inValue.cep = cep;
             return ((WSCorreios.AtendeCliente)(this)).consultaCEPAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.integrarUsuarioScolResponse WSCorreios.AtendeCliente.integrarUsuarioScol(WSCorreios.integrarUsuarioScol request)
+        {
+            return base.Channel.integrarUsuarioScol(request);
+        }
+        
+        public bool integrarUsuarioScol(int codAdministrativo, string usuario, string senha)
+        {
+            WSCorreios.integrarUsuarioScol inValue = new WSCorreios.integrarUsuarioScol();
+            inValue.codAdministrativo = codAdministrativo;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.integrarUsuarioScolResponse retVal = ((WSCorreios.AtendeCliente)(this)).integrarUsuarioScol(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8993,6 +9487,21 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.pesquisarDimensoesServicoResponse WSCorreios.AtendeCliente.pesquisarDimensoesServico(WSCorreios.pesquisarDimensoesServico request)
+        {
+            return base.Channel.pesquisarDimensoesServico(request);
+        }
+        
+        public WSCorreios.dimensaoTO pesquisarDimensoesServico(string codigo, string embalagem)
+        {
+            WSCorreios.pesquisarDimensoesServico inValue = new WSCorreios.pesquisarDimensoesServico();
+            inValue.codigo = codigo;
+            inValue.embalagem = embalagem;
+            WSCorreios.pesquisarDimensoesServicoResponse retVal = ((WSCorreios.AtendeCliente)(this)).pesquisarDimensoesServico(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.pesquisarDimensoesServicoResponse> WSCorreios.AtendeCliente.pesquisarDimensoesServicoAsync(WSCorreios.pesquisarDimensoesServico request)
         {
             return base.Channel.pesquisarDimensoesServicoAsync(request);
@@ -9004,6 +9513,20 @@ namespace WSCorreios
             inValue.codigo = codigo;
             inValue.embalagem = embalagem;
             return ((WSCorreios.AtendeCliente)(this)).pesquisarDimensoesServicoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.pesquisarEmbalagensPorServicoResponse WSCorreios.AtendeCliente.pesquisarEmbalagensPorServico(WSCorreios.pesquisarEmbalagensPorServico request)
+        {
+            return base.Channel.pesquisarEmbalagensPorServico(request);
+        }
+        
+        public WSCorreios.tipoEmbalagem[] pesquisarEmbalagensPorServico(string codigo)
+        {
+            WSCorreios.pesquisarEmbalagensPorServico inValue = new WSCorreios.pesquisarEmbalagensPorServico();
+            inValue.codigo = codigo;
+            WSCorreios.pesquisarEmbalagensPorServicoResponse retVal = ((WSCorreios.AtendeCliente)(this)).pesquisarEmbalagensPorServico(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9020,6 +9543,21 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.atualizaRemessaAgrupadaResponse WSCorreios.AtendeCliente.atualizaRemessaAgrupada(WSCorreios.atualizaRemessaAgrupada request)
+        {
+            return base.Channel.atualizaRemessaAgrupada(request);
+        }
+        
+        public string atualizaRemessaAgrupada(string usuario, string senha)
+        {
+            WSCorreios.atualizaRemessaAgrupada inValue = new WSCorreios.atualizaRemessaAgrupada();
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.atualizaRemessaAgrupadaResponse retVal = ((WSCorreios.AtendeCliente)(this)).atualizaRemessaAgrupada(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.atualizaRemessaAgrupadaResponse> WSCorreios.AtendeCliente.atualizaRemessaAgrupadaAsync(WSCorreios.atualizaRemessaAgrupada request)
         {
             return base.Channel.atualizaRemessaAgrupadaAsync(request);
@@ -9031,6 +9569,23 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).atualizaRemessaAgrupadaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.solicitaPLPResponse WSCorreios.AtendeCliente.solicitaPLP(WSCorreios.solicitaPLP request)
+        {
+            return base.Channel.solicitaPLP(request);
+        }
+        
+        public string solicitaPLP(long idPlpMaster, string numEtiqueta, string usuario, string senha)
+        {
+            WSCorreios.solicitaPLP inValue = new WSCorreios.solicitaPLP();
+            inValue.idPlpMaster = idPlpMaster;
+            inValue.numEtiqueta = numEtiqueta;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.solicitaPLPResponse retVal = ((WSCorreios.AtendeCliente)(this)).solicitaPLP(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9050,6 +9605,22 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.getStatusCartaoPostagemResponse WSCorreios.AtendeCliente.getStatusCartaoPostagem(WSCorreios.getStatusCartaoPostagem request)
+        {
+            return base.Channel.getStatusCartaoPostagem(request);
+        }
+        
+        public WSCorreios.statusCartao getStatusCartaoPostagem(string numeroCartaoPostagem, string usuario, string senha)
+        {
+            WSCorreios.getStatusCartaoPostagem inValue = new WSCorreios.getStatusCartaoPostagem();
+            inValue.numeroCartaoPostagem = numeroCartaoPostagem;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.getStatusCartaoPostagemResponse retVal = ((WSCorreios.AtendeCliente)(this)).getStatusCartaoPostagem(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.getStatusCartaoPostagemResponse> WSCorreios.AtendeCliente.getStatusCartaoPostagemAsync(WSCorreios.getStatusCartaoPostagem request)
         {
             return base.Channel.getStatusCartaoPostagemAsync(request);
@@ -9062,6 +9633,24 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).getStatusCartaoPostagemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.verificaModalTransporteResponse WSCorreios.AtendeCliente.verificaModalTransporte(WSCorreios.verificaModalTransporte request)
+        {
+            return base.Channel.verificaModalTransporte(request);
+        }
+        
+        public string verificaModalTransporte(string codigoServico, string cepOrigem, string cepDestino, string usuario, string senha)
+        {
+            WSCorreios.verificaModalTransporte inValue = new WSCorreios.verificaModalTransporte();
+            inValue.codigoServico = codigoServico;
+            inValue.cepOrigem = cepOrigem;
+            inValue.cepDestino = cepDestino;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.verificaModalTransporteResponse retVal = ((WSCorreios.AtendeCliente)(this)).verificaModalTransporte(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9082,6 +9671,19 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaDataAtualResponse WSCorreios.AtendeCliente.buscaDataAtual(WSCorreios.buscaDataAtual request)
+        {
+            return base.Channel.buscaDataAtual(request);
+        }
+        
+        public System.DateTime buscaDataAtual()
+        {
+            WSCorreios.buscaDataAtual inValue = new WSCorreios.buscaDataAtual();
+            WSCorreios.buscaDataAtualResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaDataAtual(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.buscaDataAtualResponse> WSCorreios.AtendeCliente.buscaDataAtualAsync(WSCorreios.buscaDataAtual request)
         {
             return base.Channel.buscaDataAtualAsync(request);
@@ -9091,6 +9693,32 @@ namespace WSCorreios
         {
             WSCorreios.buscaDataAtual inValue = new WSCorreios.buscaDataAtual();
             return ((WSCorreios.AtendeCliente)(this)).buscaDataAtualAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaTarifaValeResponse WSCorreios.AtendeCliente.buscaTarifaVale(WSCorreios.buscaTarifaVale request)
+        {
+            return base.Channel.buscaTarifaVale(request);
+        }
+        
+        public WSCorreios.valePostal buscaTarifaVale(string codAdministrativo, string usuario, string senha, string codServico, string cepOrigem, string cepDestino, string peso, int codFormato, double comprimento, double altura, double largura, double valorDeclarado, string servicoAdicional)
+        {
+            WSCorreios.buscaTarifaVale inValue = new WSCorreios.buscaTarifaVale();
+            inValue.codAdministrativo = codAdministrativo;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            inValue.codServico = codServico;
+            inValue.cepOrigem = cepOrigem;
+            inValue.cepDestino = cepDestino;
+            inValue.peso = peso;
+            inValue.codFormato = codFormato;
+            inValue.comprimento = comprimento;
+            inValue.altura = altura;
+            inValue.largura = largura;
+            inValue.valorDeclarado = valorDeclarado;
+            inValue.servicoAdicional = servicoAdicional;
+            WSCorreios.buscaTarifaValeResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaTarifaVale(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9119,6 +9747,26 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.validarPostagemSimultaneaResponse WSCorreios.AtendeCliente.validarPostagemSimultanea(WSCorreios.validarPostagemSimultanea request)
+        {
+            return base.Channel.validarPostagemSimultanea(request);
+        }
+        
+        public bool validarPostagemSimultanea(int codAdministrativo, int codigoServico, string idCartaoPostagem, string cepDestinatario, WSCorreios.coletaSimultanea coleta, string usuario, string senha)
+        {
+            WSCorreios.validarPostagemSimultanea inValue = new WSCorreios.validarPostagemSimultanea();
+            inValue.codAdministrativo = codAdministrativo;
+            inValue.codigoServico = codigoServico;
+            inValue.idCartaoPostagem = idCartaoPostagem;
+            inValue.cepDestinatario = cepDestinatario;
+            inValue.coleta = coleta;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.validarPostagemSimultaneaResponse retVal = ((WSCorreios.AtendeCliente)(this)).validarPostagemSimultanea(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.validarPostagemSimultaneaResponse> WSCorreios.AtendeCliente.validarPostagemSimultaneaAsync(WSCorreios.validarPostagemSimultanea request)
         {
             return base.Channel.validarPostagemSimultaneaAsync(request);
@@ -9138,6 +9786,21 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.getStatusPLPResponse WSCorreios.AtendeCliente.getStatusPLP(WSCorreios.getStatusPLP request)
+        {
+            return base.Channel.getStatusPLP(request);
+        }
+        
+        public WSCorreios.statusPlp getStatusPLP(WSCorreios.objetoPostal[] arg0, string arg1)
+        {
+            WSCorreios.getStatusPLP inValue = new WSCorreios.getStatusPLP();
+            inValue.arg0 = arg0;
+            inValue.arg1 = arg1;
+            WSCorreios.getStatusPLPResponse retVal = ((WSCorreios.AtendeCliente)(this)).getStatusPLP(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.getStatusPLPResponse> WSCorreios.AtendeCliente.getStatusPLPAsync(WSCorreios.getStatusPLP request)
         {
             return base.Channel.getStatusPLPAsync(request);
@@ -9152,6 +9815,20 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.pesquisarServicosAdicionaisResponse WSCorreios.AtendeCliente.pesquisarServicosAdicionais(WSCorreios.pesquisarServicosAdicionais request)
+        {
+            return base.Channel.pesquisarServicosAdicionais(request);
+        }
+        
+        public WSCorreios.servicoAdicionalTO[] pesquisarServicosAdicionais(string codigo)
+        {
+            WSCorreios.pesquisarServicosAdicionais inValue = new WSCorreios.pesquisarServicosAdicionais();
+            inValue.codigo = codigo;
+            WSCorreios.pesquisarServicosAdicionaisResponse retVal = ((WSCorreios.AtendeCliente)(this)).pesquisarServicosAdicionais(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.pesquisarServicosAdicionaisResponse> WSCorreios.AtendeCliente.pesquisarServicosAdicionaisAsync(WSCorreios.pesquisarServicosAdicionais request)
         {
             return base.Channel.pesquisarServicosAdicionaisAsync(request);
@@ -9162,6 +9839,21 @@ namespace WSCorreios
             WSCorreios.pesquisarServicosAdicionais inValue = new WSCorreios.pesquisarServicosAdicionais();
             inValue.codigo = codigo;
             return ((WSCorreios.AtendeCliente)(this)).pesquisarServicosAdicionaisAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaServicosXServicosAdicionaisResponse WSCorreios.AtendeCliente.buscaServicosXServicosAdicionais(WSCorreios.buscaServicosXServicosAdicionais request)
+        {
+            return base.Channel.buscaServicosXServicosAdicionais(request);
+        }
+        
+        public string[] buscaServicosXServicosAdicionais(string usuario, string senha)
+        {
+            WSCorreios.buscaServicosXServicosAdicionais inValue = new WSCorreios.buscaServicosXServicosAdicionais();
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.buscaServicosXServicosAdicionaisResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaServicosXServicosAdicionais(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9179,6 +9871,24 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.cancelarPedidoScolResponse WSCorreios.AtendeCliente.cancelarPedidoScol(WSCorreios.cancelarPedidoScol request)
+        {
+            return base.Channel.cancelarPedidoScol(request);
+        }
+        
+        public WSCorreios.retornoCancelamento cancelarPedidoScol(string codAdministrativo, string idPostagem, string tipo, string usuario, string senha)
+        {
+            WSCorreios.cancelarPedidoScol inValue = new WSCorreios.cancelarPedidoScol();
+            inValue.codAdministrativo = codAdministrativo;
+            inValue.idPostagem = idPostagem;
+            inValue.tipo = tipo;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.cancelarPedidoScolResponse retVal = ((WSCorreios.AtendeCliente)(this)).cancelarPedidoScol(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.cancelarPedidoScolResponse> WSCorreios.AtendeCliente.cancelarPedidoScolAsync(WSCorreios.cancelarPedidoScol request)
         {
             return base.Channel.cancelarPedidoScolAsync(request);
@@ -9193,6 +9903,25 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).cancelarPedidoScolAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.bloquearObjetoResponse WSCorreios.AtendeCliente.bloquearObjeto(WSCorreios.bloquearObjeto request)
+        {
+            return base.Channel.bloquearObjeto(request);
+        }
+        
+        public string bloquearObjeto(string numeroEtiqueta, long idPlp, WSCorreios.tipoBloqueio tipoBloqueio, WSCorreios.acao acao, string usuario, string senha)
+        {
+            WSCorreios.bloquearObjeto inValue = new WSCorreios.bloquearObjeto();
+            inValue.numeroEtiqueta = numeroEtiqueta;
+            inValue.idPlp = idPlp;
+            inValue.tipoBloqueio = tipoBloqueio;
+            inValue.acao = acao;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.bloquearObjetoResponse retVal = ((WSCorreios.AtendeCliente)(this)).bloquearObjeto(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9214,6 +9943,23 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaContratoResponse WSCorreios.AtendeCliente.buscaContrato(WSCorreios.buscaContrato request)
+        {
+            return base.Channel.buscaContrato(request);
+        }
+        
+        public WSCorreios.contratoERP buscaContrato(string numero, long diretoria, string usuario, string senha)
+        {
+            WSCorreios.buscaContrato inValue = new WSCorreios.buscaContrato();
+            inValue.numero = numero;
+            inValue.diretoria = diretoria;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.buscaContratoResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaContrato(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.buscaContratoResponse> WSCorreios.AtendeCliente.buscaContratoAsync(WSCorreios.buscaContrato request)
         {
             return base.Channel.buscaContratoAsync(request);
@@ -9227,6 +9973,25 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).buscaContratoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.solicitaEtiquetasResponse WSCorreios.AtendeCliente.solicitaEtiquetas(WSCorreios.solicitaEtiquetas request)
+        {
+            return base.Channel.solicitaEtiquetas(request);
+        }
+        
+        public string solicitaEtiquetas(string tipoDestinatario, string identificador, long idServico, int qtdEtiquetas, string usuario, string senha)
+        {
+            WSCorreios.solicitaEtiquetas inValue = new WSCorreios.solicitaEtiquetas();
+            inValue.tipoDestinatario = tipoDestinatario;
+            inValue.identificador = identificador;
+            inValue.idServico = idServico;
+            inValue.qtdEtiquetas = qtdEtiquetas;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.solicitaEtiquetasResponse retVal = ((WSCorreios.AtendeCliente)(this)).solicitaEtiquetas(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9248,6 +10013,22 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.solicitaXmlPlpResponse WSCorreios.AtendeCliente.solicitaXmlPlp(WSCorreios.solicitaXmlPlp request)
+        {
+            return base.Channel.solicitaXmlPlp(request);
+        }
+        
+        public string solicitaXmlPlp(long idPlpMaster, string usuario, string senha)
+        {
+            WSCorreios.solicitaXmlPlp inValue = new WSCorreios.solicitaXmlPlp();
+            inValue.idPlpMaster = idPlpMaster;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.solicitaXmlPlpResponse retVal = ((WSCorreios.AtendeCliente)(this)).solicitaXmlPlp(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.solicitaXmlPlpResponse> WSCorreios.AtendeCliente.solicitaXmlPlpAsync(WSCorreios.solicitaXmlPlp request)
         {
             return base.Channel.solicitaXmlPlpAsync(request);
@@ -9260,6 +10041,26 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).solicitaXmlPlpAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.validarPostagemReversaResponse WSCorreios.AtendeCliente.validarPostagemReversa(WSCorreios.validarPostagemReversa request)
+        {
+            return base.Channel.validarPostagemReversa(request);
+        }
+        
+        public bool validarPostagemReversa(string codAdministrativo, string codigoServico, string cepDestinatario, string idCartaoPostagem, WSCorreios.coletaReversa coleta, string usuario, string senha)
+        {
+            WSCorreios.validarPostagemReversa inValue = new WSCorreios.validarPostagemReversa();
+            inValue.codAdministrativo = codAdministrativo;
+            inValue.codigoServico = codigoServico;
+            inValue.cepDestinatario = cepDestinatario;
+            inValue.idCartaoPostagem = idCartaoPostagem;
+            inValue.coleta = coleta;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.validarPostagemReversaResponse retVal = ((WSCorreios.AtendeCliente)(this)).validarPostagemReversa(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9282,6 +10083,23 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaClienteResponse WSCorreios.AtendeCliente.buscaCliente(WSCorreios.buscaCliente request)
+        {
+            return base.Channel.buscaCliente(request);
+        }
+        
+        public WSCorreios.clienteERP buscaCliente(string idContrato, string idCartaoPostagem, string usuario, string senha)
+        {
+            WSCorreios.buscaCliente inValue = new WSCorreios.buscaCliente();
+            inValue.idContrato = idContrato;
+            inValue.idCartaoPostagem = idCartaoPostagem;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.buscaClienteResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaCliente(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.buscaClienteResponse> WSCorreios.AtendeCliente.buscaClienteAsync(WSCorreios.buscaCliente request)
         {
             return base.Channel.buscaClienteAsync(request);
@@ -9295,6 +10113,25 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).buscaClienteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaPagamentoEntregaResponse WSCorreios.AtendeCliente.buscaPagamentoEntrega(WSCorreios.buscaPagamentoEntrega request)
+        {
+            return base.Channel.buscaPagamentoEntrega(request);
+        }
+        
+        public string buscaPagamentoEntrega(string usuario, string senha, string contrato, string dataInicio, string dataFim, string etiqueta)
+        {
+            WSCorreios.buscaPagamentoEntrega inValue = new WSCorreios.buscaPagamentoEntrega();
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            inValue.contrato = contrato;
+            inValue.dataInicio = dataInicio;
+            inValue.dataFim = dataFim;
+            inValue.etiqueta = etiqueta;
+            WSCorreios.buscaPagamentoEntregaResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaPagamentoEntrega(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9316,6 +10153,23 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.solicitarPostagemScolResponse WSCorreios.AtendeCliente.solicitarPostagemScol(WSCorreios.solicitarPostagemScol request)
+        {
+            return base.Channel.solicitarPostagemScol(request);
+        }
+        
+        public string solicitarPostagemScol(int codAdministrativo, string xml, string usuario, string senha)
+        {
+            WSCorreios.solicitarPostagemScol inValue = new WSCorreios.solicitarPostagemScol();
+            inValue.codAdministrativo = codAdministrativo;
+            inValue.xml = xml;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.solicitarPostagemScolResponse retVal = ((WSCorreios.AtendeCliente)(this)).solicitarPostagemScol(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.solicitarPostagemScolResponse> WSCorreios.AtendeCliente.solicitarPostagemScolAsync(WSCorreios.solicitarPostagemScol request)
         {
             return base.Channel.solicitarPostagemScolAsync(request);
@@ -9329,6 +10183,23 @@ namespace WSCorreios
             inValue.usuario = usuario;
             inValue.senha = senha;
             return ((WSCorreios.AtendeCliente)(this)).solicitarPostagemScolAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaServicosResponse WSCorreios.AtendeCliente.buscaServicos(WSCorreios.buscaServicos request)
+        {
+            return base.Channel.buscaServicos(request);
+        }
+        
+        public WSCorreios.servicoERP[] buscaServicos(string idContrato, string idCartaoPostagem, string usuario, string senha)
+        {
+            WSCorreios.buscaServicos inValue = new WSCorreios.buscaServicos();
+            inValue.idContrato = idContrato;
+            inValue.idCartaoPostagem = idCartaoPostagem;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.buscaServicosResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaServicos(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9348,6 +10219,20 @@ namespace WSCorreios
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.obterMensagemParametrizadaResponse WSCorreios.AtendeCliente.obterMensagemParametrizada(WSCorreios.obterMensagemParametrizada request)
+        {
+            return base.Channel.obterMensagemParametrizada(request);
+        }
+        
+        public WSCorreios.mensagemParametrizadaTO obterMensagemParametrizada(short id)
+        {
+            WSCorreios.obterMensagemParametrizada inValue = new WSCorreios.obterMensagemParametrizada();
+            inValue.id = id;
+            WSCorreios.obterMensagemParametrizadaResponse retVal = ((WSCorreios.AtendeCliente)(this)).obterMensagemParametrizada(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<WSCorreios.obterMensagemParametrizadaResponse> WSCorreios.AtendeCliente.obterMensagemParametrizadaAsync(WSCorreios.obterMensagemParametrizada request)
         {
             return base.Channel.obterMensagemParametrizadaAsync(request);
@@ -9358,6 +10243,23 @@ namespace WSCorreios
             WSCorreios.obterMensagemParametrizada inValue = new WSCorreios.obterMensagemParametrizada();
             inValue.id = id;
             return ((WSCorreios.AtendeCliente)(this)).obterMensagemParametrizadaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WSCorreios.buscaOpcoesResponse WSCorreios.AtendeCliente.buscaOpcoes(WSCorreios.buscaOpcoes request)
+        {
+            return base.Channel.buscaOpcoes(request);
+        }
+        
+        public string buscaOpcoes(string[] listaObjetos, string tipoResultado, string usuario, string senha)
+        {
+            WSCorreios.buscaOpcoes inValue = new WSCorreios.buscaOpcoes();
+            inValue.listaObjetos = listaObjetos;
+            inValue.tipoResultado = tipoResultado;
+            inValue.usuario = usuario;
+            inValue.senha = senha;
+            WSCorreios.buscaOpcoesResponse retVal = ((WSCorreios.AtendeCliente)(this)).buscaOpcoes(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

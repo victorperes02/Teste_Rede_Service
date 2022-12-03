@@ -2470,11 +2470,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\victor.santos\\Documents\\Aplicativo Rede Service\\AppRedeService\\TesteRedeService\\TesteRedeService.csproj",
+      "projectUniqueName": "C:\\Users\\victor.santos\\Documents\\Teste_Rede_Service\\TesteRedeService\\TesteRedeService.csproj",
       "projectName": "TesteRedeService",
-      "projectPath": "C:\\Users\\victor.santos\\Documents\\Aplicativo Rede Service\\AppRedeService\\TesteRedeService\\TesteRedeService.csproj",
+      "projectPath": "C:\\Users\\victor.santos\\Documents\\Teste_Rede_Service\\TesteRedeService\\TesteRedeService.csproj",
       "packagesPath": "C:\\Users\\victor.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\victor.santos\\Documents\\Aplicativo Rede Service\\AppRedeService\\TesteRedeService\\obj\\",
+      "outputPath": "C:\\Users\\victor.santos\\Documents\\Teste_Rede_Service\\TesteRedeService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\victor.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2547,12 +2547,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.24, 3.1.24]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

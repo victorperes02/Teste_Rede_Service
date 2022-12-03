@@ -10,6 +10,7 @@
     "namespaceMappings": [
       "*, WSCorreios"
     ],
+    "sync": true,
     "targetFramework": "netcoreapp3.1",
     "typeReuseMode": "All"
   }

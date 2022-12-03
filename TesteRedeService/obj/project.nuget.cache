@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zywBxY4qCDyw+AwnJY/iXmrGksAb6ei/dw068gDqRWAb+xnXpsoVdk01K5holQujNQQWUUYevnUOL/CMsUpY5w==",
+  "dgSpecHash": "4bY8MqaRw+B1Rqjwr/tsnHVZbxN6JU0gwSgURD2R6m2Dp0G6zilkEmT0/mD3xRF2bdKsvVroGAqTVn5Z6aKb0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victor.santos\\Documents\\Aplicativo Rede Service\\AppRedeService\\TesteRedeService\\TesteRedeService.csproj",
+  "projectFilePath": "C:\\Users\\victor.santos\\Documents\\Teste_Rede_Service\\TesteRedeService\\TesteRedeService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victor.santos\\.nuget\\packages\\anglesharp\\0.16.1\\anglesharp.0.16.1.nupkg.sha512",
     "C:\\Users\\victor.santos\\.nuget\\packages\\correios.net\\1.4.3\\correios.net.1.4.3.nupkg.sha512",
@@ -35,8 +35,7 @@
     "C:\\Users\\victor.santos\\.nuget\\packages\\system.servicemodel.nettcp\\4.7.0\\system.servicemodel.nettcp.4.7.0.nupkg.sha512",
     "C:\\Users\\victor.santos\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\system.servicemodel.primitives.4.7.0.nupkg.sha512",
     "C:\\Users\\victor.santos\\.nuget\\packages\\system.servicemodel.security\\4.7.0\\system.servicemodel.security.4.7.0.nupkg.sha512",
-    "C:\\Users\\victor.santos\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512",
-    "C:\\Users\\victor.santos\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.24\\microsoft.netcore.app.host.win-x64.3.1.24.nupkg.sha512"
+    "C:\\Users\\victor.santos\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

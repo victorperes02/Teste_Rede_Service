@@ -110,36 +110,31 @@ namespace TesteRedeService
 
         private void button6_Click(object sender, EventArgs e)
         {
-           /*
-          LocalizarCEP();
-             void LocalizarCEP()
-            {
-                if (!string.IsNullOrWhiteSpace(textBox2.Text))
-                {
-                    using (var ws = new WSCorreios.AtendeClienteClient())
-                    {
-                        try
-                        {
-                           // var endereco = ws.consultaCEPResponse(textBox2.Text.Trim());
 
-                            txtEstado.Text = endereco.;
-                            txtCidade.Text = endereco.cidade;
-                            txtBairro.Text = endereco.bairro;
-                            txtRua.Text = endereco.end;
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                }
-                else
+            if (string.IsNullOrEmpty(this.textcep.Text))
+            {
+                MessageBox.Show("Informe um CEP válido!!", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            using (var ws = new WSCorreios.AtendeClienteClient())
+            {
+                try
                 {
-                    MessageBox.Show("Informe um CEP válido...", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    var enderecoERP = ws.consultaCEP(this.textcep.Text.Trim());
+
+                    this.txtEstado.Text = enderecoERP.uf;
+                    this.txtCidade.Text = enderecoERP.cidade;
+                    this.txtBairro.Text = enderecoERP.bairro;
+                    this.txtRua.Text = enderecoERP.end;
                 }
-            }*/
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
-       
+          
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
