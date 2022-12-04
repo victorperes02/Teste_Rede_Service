@@ -1,1 +1,1 @@
-Para executar fazer o downloa de AplicativoResultadoTest3.0
+Para executar fazer o download de AplicativoResultadoTest3.0
